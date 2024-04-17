@@ -1,0 +1,2 @@
+# tasksManager
+Nativescript practice project
