@@ -1,0 +1,11 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="{{ task.description }}"/>
+    <ScrollView>
+      <StackLayout>
+          <FlexboxLayout flexDirection="column" height="100%" class="box">
+            <Label text="{{ task.id }}" />
+            <Label text="{{ task.description }}" />
+          </FlexboxLayout>
+      </StackLayout>
+  </ScrollView>
+</Page>

@@ -1,7 +1,7 @@
 import { NativeScriptConfig } from '@nativescript/core';
 
 export default {
-  id: 'org.nativescript.tasksManager',
+  id: 'org.nativescript.tasksmanager',
   appPath: 'app',
   appResourcesPath: 'App_Resources',
   android: {

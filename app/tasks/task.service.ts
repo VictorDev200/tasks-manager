@@ -1,21 +1,18 @@
-import { TaskModel } from "./models/task.model";
+import { TaskModel } from "./task.model";
 
 export class TaskService {
   private tasks: TaskModel[] = [
     {
       id: 1,
-      clientName: 'Colombiana',
-      description: 'Requiere revisión de velocidad de producción de bebidas gaseosas'
+      description: "Musical",
     },
     {
       id: 2,
-      clientName: 'Claro',
-      description: 'Requiere revisión de velocidad de producción de tarjetas '
+      description: "Beetlejuice",
     },
     {
-      id: 2,
-      clientName: 'Pepe Ganga',
-      description: 'Requiere revisión de velocidad de producción de juguetes'
+      id: 3,
+      description: "Anastasia",
     },
   ];
 

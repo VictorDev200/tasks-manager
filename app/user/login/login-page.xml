@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="TasksManager" />
+    <StackLayout height="100%">
+      <FlexboxLayout height="100%" flexDirection="column">
+        <Label text="Username" />
+        <TextField hint="Username"/>
+        <Label text="Password" />
+        <TextField hint="Password"/>
+        <Button text="Login" tap="{{ onTapLogin }}"/>
+        <Button text="Register" tap="{{ onTapRegister }}" />
+        <Button text="Recover Password" tap="{{ onTapRecoverPassword }}" />
+      </FlexboxLayout>
+    </StackLayout>
+  </Page>
