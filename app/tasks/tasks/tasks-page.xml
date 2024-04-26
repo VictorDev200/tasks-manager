@@ -1,11 +1,11 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
-    <ActionBar title="NativeFlix" />
+    <ActionBar title="TasksManager" />
     <StackLayout height="100%">
       <ListView
-          height="100%"
-          separatorColor="transparent"
-          items="{{ tasks }}"
-          itemTap="{{ onTaskTap }}">
+        height="100%"
+        separatorColor="red"
+        items="{{ tasks }}"
+        itemTap="{{ onTaskTap }}">
         <ListView.itemTemplate>
           <FlexboxLayout flexDirection="column" height="100%" class="box">
             <Label text="{{ id }}" />

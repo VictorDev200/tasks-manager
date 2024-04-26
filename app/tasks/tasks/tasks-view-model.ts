@@ -1,19 +1,9 @@
-import {
-  Frame,
-  Observable,
-  ObservableArray,
-  ItemEventData,
-} from "@nativescript/core";
-import { TaskModel } from "../task.model";
+import { Frame, ItemEventData, Observable, ObservableArray } from "@nativescript/core";
+import { TaskModel } from "../models/task.model";
 import { TaskService } from "../task.service";
 
 export class TasksViewModel extends Observable {
   private _tasks: TaskModel[];
-
-  constructor() {
-    super();
-    this.populateTasks();
-  }
 
   get tasks(): ObservableArray<TaskModel> {
     return new ObservableArray(this._tasks);
@@ -28,5 +18,10 @@ export class TasksViewModel extends Observable {
       moduleName: "tasks/task/task-page",
       context: { taskId: this._tasks[args.index].id },
     });
+  }
+
+  constructor() {
+    super();
+    this.populateTasks()
   }
 }

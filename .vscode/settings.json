@@ -12,3 +12,6 @@
     "files.exclude": {
         "schema": true
     },
+    "NativescriptExtend.format.enabled": true,
+    "NativescriptExtend.validation.enabled": true
+}

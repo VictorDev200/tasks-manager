@@ -1,5 +1,4 @@
 import { NavigatedData, Page } from "@nativescript/core";
-
 import { TasksViewModel } from "./tasks-view-model";
 
 export function navigatingTo(args: NavigatedData): void {
